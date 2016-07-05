@@ -10,9 +10,6 @@ express.static(path.join(__dirname, "../app"));
 require('./dev-config')(app);
 
 app.use('/*', function(req, res, next){
-  console.log("REQ: ", req);
-  console.log("APPLICATION IS RUNNING...");
-
   res.sendFile(app.get('indexHTMLPath'));
 })
 
