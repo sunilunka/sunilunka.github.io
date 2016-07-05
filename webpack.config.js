@@ -3,7 +3,7 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-    entry: './dev/dev-server/js/app.jsx',
+    entry: './dev/dev-server/components/app.js',
     output: {
       path: './dev/app/scripts',
       filename: 'app.js'
@@ -15,12 +15,7 @@ module.exports = {
         loader: 'jshint-loader'
       }],
       loaders: [{
-        test: /\.jsx?$/,
-        exclude: /node_modules/,
-        loader: 'babel-loader'
-      },
-      {
-        test: /\.js?$/,
+        test: /\.(js|jsx|es6)?$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
       }]
