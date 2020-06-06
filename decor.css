@@ -1,0 +1,17 @@
+body {
+  background-color: #222;
+}
+
+section {
+  color: #FBFBFB;
+  margin: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+  font-family: "Helvetica", "Helvetica Neue", "Arial";
+}
+
+p {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
